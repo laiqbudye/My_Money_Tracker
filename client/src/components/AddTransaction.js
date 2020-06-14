@@ -10,7 +10,6 @@ export const AddTransaction = () => {
         e.preventDefault();
 
         const newTransaction = {
-            id: Math.floor(Math.random() * 100000000),  // needs major refactoring
             text: text,
             amount: +amount  // shortcut to convert string into number
         }

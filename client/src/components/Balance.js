@@ -9,7 +9,7 @@ export const Balance = () => {
     return (
         <Fragment>
             <h4>Your Balance</h4>
-            <h1 >INR {totalamount}</h1>
+            <h1 >INR {new Intl.NumberFormat('en-IN').format(totalamount)}</h1>
         </Fragment>
     )
 }

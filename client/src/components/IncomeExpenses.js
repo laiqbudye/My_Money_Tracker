@@ -20,11 +20,11 @@ export const IncomeExpenses = () => {
         <div className="inc-exp-container">
             <div>
                 <h4>Income</h4>
-                <p className="money plus">{income} Rs.</p>
+                <p className="money plus">{new Intl.NumberFormat('en-IN').format(income)} Rs.</p>
             </div>
             <div>
                 <h4>Expense</h4>
-                <p className="money minus">{expense} Rs.</p>
+                <p className="money minus">{new Intl.NumberFormat('en-IN').format(expense)} Rs.</p>
             </div>
         </div>
     )
